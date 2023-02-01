@@ -284,9 +284,14 @@ transition-duration: .3s;
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (min-width: 992px) { 
     .blog__grid{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .blog__grid--pagina{
+        grid-template-columns: repeat(3, 1fr);
+
     }
 }
 
@@ -373,4 +378,16 @@ transition-duration: .3s;
     color:var(--blanco);
     font-weight:700;
     text-align: center;
+}
+
+.nosotros__grid{
+    display: grid;
+    gap: 4rem;
+}   
+
+@media (min-width: 768px) { 
+     .nosotros__grid{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+     } 
 }
